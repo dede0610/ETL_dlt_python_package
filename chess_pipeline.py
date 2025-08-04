@@ -67,5 +67,5 @@ for player in ['dede0610', 'Fred3337']:
 # Extract, normalize, and load the data
 pipeline.run(structured_data, table_name='player_stats')
 
-# Terminal command to run to open the streamlit interface with the chess data of the two playes
+# Terminal command to run to open the streamlit interface with the chess data of the two players
 # dlt pipeline chess_pipeline show
