@@ -38,12 +38,9 @@ for player in ['dede0610', 'Fred3337']:
         player_record = {
 
             "username": player_profile["username"],
-            "player_id": player_profile["player_id"],
             "date_extraction" : today_date,
             "country": player_profile["country"],
             "last_online": player_profile["last_online"],
-            "joined": player_profile["joined"],
-            "league": player_profile["league"],
 
             "chess_rapid_rating": player_stats["chess_rapid"]["last"]["rating"],
             "chess_rapid_best_rating": player_stats["chess_rapid"]["best"]["rating"],
