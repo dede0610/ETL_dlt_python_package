@@ -30,7 +30,6 @@ for player in ['dede0610', 'Fred3337']:
 
         # Combine les données pour ce joueur
         player_record = {
-
             "username": player_profile["username"],
             "date_extraction" : today_date,
             "country": player_profile["country"],
@@ -46,10 +45,8 @@ for player in ['dede0610', 'Fred3337']:
             "chess_blitz_best_rating_date": player_stats["chess_blitz"]["best"]["date"],
             "chess_blitz_stats": player_stats["chess_blitz"]["record"],   
         }
-
         # Ajoute les données structurées
         structured_data.append(player_record)
-        
     except requests.exceptions.RequestException as e:
         print(f"Failed to fetch data for {player}: {e}")
 
