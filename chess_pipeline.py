@@ -7,7 +7,8 @@ display it into a streamlit interface using dlt package.
 from datetime import date
 
 import dlt
-from dlt.sources.helpers import requests
+import requests
+#from dlt.sources.helpers import requests
 
 today_date = date.today()
 
