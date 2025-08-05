@@ -26,12 +26,12 @@ for player in ['dede0610', 'Fred3337']:
     URL = f'https://api.chess.com/pub/player/{player}'
     try:
          # Récupération du profil
-        profile_response = requests.get(URL)
+        profile_response = requests.get(url=URL, timeout=10)
         profile_response.raise_for_status()
         player_profile = profile_response.json()
 
         # Récupération des stats
-        stats_response = requests.get(URL + '/stats')
+        stats_response = requests.get(URL + '/stats', timeout=10)
         stats_response.raise_for_status()
         player_stats = stats_response.json()
 
