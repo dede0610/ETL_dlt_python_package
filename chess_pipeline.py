@@ -1,10 +1,9 @@
-import dlt
 from datetime import date
+
+import dlt
 from dlt.sources.helpers import requests
 
 today_date = date.today()
-
-
 
 # Create a dlt pipeline that will load
 # chess player data to the DuckDB destination
@@ -14,16 +13,12 @@ pipeline = dlt.pipeline(
     dataset_name='player_data'
 )
 
-
-
 structured_data = []
 
 for player in ['dede0610', 'Fred3337']:
-    
     url = f'https://api.chess.com/pub/player/{player}'
-    
     try:
-        # Récupération du profil
+         # Récupération du profil
         profile_response = requests.get(url)
         profile_response.raise_for_status()
         player_profile = profile_response.json()
@@ -32,7 +27,6 @@ for player in ['dede0610', 'Fred3337']:
         stats_response = requests.get(url + '/stats')
         stats_response.raise_for_status()
         player_stats = stats_response.json()
-
 
         # Combine les données pour ce joueur
         player_record = {
