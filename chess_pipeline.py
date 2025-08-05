@@ -24,7 +24,7 @@ for player in ['dede0610', 'Fred3337']:
         player_profile = profile_response.json()
 
         # Récupération des stats
-        stats_response = requests.get(url + '/stats')
+        stats_response = requests.get(URL + '/stats')
         stats_response.raise_for_status()
         player_stats = stats_response.json()
 
