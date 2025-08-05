@@ -1,6 +1,7 @@
 """
 This module provides functionality for managing and processing chess game data.
-It includes functions to load chess game data from an api into a duckdb database and display it into a streamlit interface using dlt package.
+It includes functions to load chess game data from an api into a duckdb database and 
+display it into a streamlit interface using dlt package.
 """
 
 from datetime import date
