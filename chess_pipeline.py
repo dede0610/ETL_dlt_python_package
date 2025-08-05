@@ -16,10 +16,10 @@ pipeline = dlt.pipeline(
 structured_data = []
 
 for player in ['dede0610', 'Fred3337']:
-    url = f'https://api.chess.com/pub/player/{player}'
+    URL = f'https://api.chess.com/pub/player/{player}'
     try:
          # Récupération du profil
-        profile_response = requests.get(url)
+        profile_response = requests.get(URL)
         profile_response.raise_for_status()
         player_profile = profile_response.json()
 
@@ -49,7 +49,7 @@ for player in ['dede0610', 'Fred3337']:
 
         # Ajoute les données structurées
         structured_data.append(player_record)
-   
+        
     except requests.exceptions.RequestException as e:
         print(f"Failed to fetch data for {player}: {e}")
 
@@ -58,5 +58,5 @@ for player in ['dede0610', 'Fred3337']:
 # Extract, normalize, and load the data
 pipeline.run(structured_data, table_name='player_stats')
 
-# CLI command to run in order to launch the streamlit interface displaying the chess data of the two players
+# CLI command to run
 # dlt pipeline chess_pipeline show
