@@ -2,13 +2,13 @@
 
 ## Overview
 
-This is a small personal project aimed at exploring the capabilities of the [dlt](https://pypi.org/project/dlt/) Python package for ETL (Extract, Transform, Load) processes. The project connects to the Chess.com API to fetch player statistics and displays the data in a user-friendly Streamlit interface. Users can query the data using SQL through the Streamlit interface.
+This is a small personal project aimed at exploring the capabilities of the [dlthub](https://pypi.org/project/dlt/) Python package for ETL (Extract, Transform, Load) processes. The project connects to the Chess.com API to fetch player statistics and displays the data in a user-friendly Streamlit interface. Users can query the data using SQL through the Streamlit interface.
 
 ## Features
 
 - Connects to the Chess.com API to retrieve player statistics.
-- Utilizes the dlt package for efficient ETL processes.
-- Displays data in a Streamlit interface for easy access and visualization.
+- Utilises the dlt package for efficient ETL processes.
+- Displays data in a Streamlit interface for easy access and visualisation.
 - Allows users to query data using SQL.
 - Implements code quality checks using Pylint, integrated with GitHub Actions.
 
